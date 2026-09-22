@@ -1,15 +1,12 @@
 import { defineConfig } from 'vite'
-import react, { reactCompilerPreset } from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   base: '/Portfolio-Website/',
+
   plugins: [
-    react({
-      babel: {
-        presets: [reactCompilerPreset()],
-      },
-    }),
+    react(),
     tailwindcss(),
   ],
 })
