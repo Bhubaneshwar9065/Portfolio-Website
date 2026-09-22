@@ -92,7 +92,7 @@ const Work = () => {
                   before:absolute
                   before:left-0
                   before:top-0
-                  before:w-[2px]
+                  before:w[2px]
                   before:h-full
                   before:bg-purple-600
                 "
@@ -102,7 +102,7 @@ const Work = () => {
                 <div
                   className="
                     absolute
-                    left-[-11px]
+                    left[-11px]
                     top-0
                     w-6
                     h-6
