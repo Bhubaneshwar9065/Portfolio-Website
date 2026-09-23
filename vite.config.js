@@ -1,10 +1,12 @@
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/Portfolio-Website">
-    <App />
-  </BrowserRouter>
-)
+export default defineConfig({
+  base: '/Portfolio-Website/',
+
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+})

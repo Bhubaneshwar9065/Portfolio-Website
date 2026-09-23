@@ -1,13 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
-
-
-export default defineConfig({
-  base: '/Portfolio-Website/',
-
-  plugins: [
-    react(),
-
-  ],
-})
+createRoot(document.getElementById('root')).render(
+  <BrowserRouter basename="/Portfolio-Website">
+    <App />
+  </BrowserRouter>
+)
