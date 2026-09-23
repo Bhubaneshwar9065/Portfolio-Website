@@ -57,7 +57,7 @@ const Work = () => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.9, ease: "easeOut" }}
+      transition={{ duration: 0.9, ease: "easeInOut" }}
       viewport={{ once: false, amount: 0.2 }}
       id="experience"
       className="min-h-screen py-20 bg-slate-900"

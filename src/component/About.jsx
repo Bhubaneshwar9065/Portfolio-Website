@@ -30,7 +30,7 @@ const About = () => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      transition={{ duration: 0.6, ease: 'easeInOut' }}
       viewport={{ once: true }}
       id="about"
       className="min-h-screen py-20 bg-slate-900"
@@ -56,7 +56,7 @@ const About = () => {
             <motion.img
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: 'easeOut' }}
+              transition={{ duration: 0.9, ease: 'easeInOut' }}
               viewport={{ once: true, amount: 0.2 }}
               className="w-74 h-74 md:w-96 md:h-96 object-cover rounded-2xl"
               src={nameimg}
@@ -69,7 +69,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: 'easeOut' }}
+            transition={{ duration: 0.9, ease: 'easeInOut' }}
             viewport={{ once: true, amount: 0.2 }}
             className="md:w-1/2"
           >

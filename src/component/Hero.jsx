@@ -8,7 +8,7 @@ const Hero = () => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easOut' }}
+      transition={{ duration: 0.6, ease: 'easeInOut' }}
       viewport={{ once: false }}
       id='home'
       className='min-h-screen flex items-center pt-20 bg-slate-900'
